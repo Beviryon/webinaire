@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Guide Trevixia - Parcours & Tarifs</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="nav.css" rel="stylesheet" />
+    <link href="guide.css" rel="stylesheet" />
+  </head>
+  <body class="has-nav">
+    <nav class="nav-wrapper">
+      <div class="nav-container">
+        <a href="index.html" class="nav-brand"><i class="fa-solid fa-layer-group"></i><span>TREVIXIA</span></a>
+        <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+        <div class="nav-links">
+          <a href="index.html">Accueil</a>
+          <a href="slide1.html">1</a>
+          <a href="slide2.html">2</a>
+          <a href="slide3.html">3</a>
+          <a href="slide4.html">4</a>
+          <a href="slide5.html">5</a>
+          <a href="slide6.html">6</a>
+          <a href="slide7.html">7</a>
+          <a href="slide8.html">8</a>
+          <a href="slide9.html">9</a>
+          <a href="guide.html" class="nav-guide active"><i class="fa-solid fa-file-pdf mr-1"></i> Le Guide</a>
+        </div>
+      </div>
+    </nav>
+    <button
+      class="download-pdf-btn"
+      onclick="window.print(); return false;"
+      aria-label="Télécharger en PDF"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+        <polyline points="7 10 12 15 17 10" />
+        <line x1="12" y1="15" x2="12" y2="3" />
+      </svg>
+      Télécharger en PDF
+    </button>
+
+    <div class="container">
+      <header class="guide-header">
+        <div class="logo brand-font">TREVIXIA</div>
+        <p class="tagline">« Moins d'effort, plus d'impact »</p>
+        <p class="subtitle mb-0">
+          Solutions Digitales & Automatisation pour PME
+        </p>
+        <h1 class="brand-font">Le Guide</h1>
+        <p class="subtitle">
+          Parcours détaillés & Tarifs • Édition 2026
+        </p>
+      </header>
+
+      <section>
+        <h2>1. Notre écosystème</h2>
+        <p>
+          Trevixia est un studio/école hybride qui transforme les PME grâce aux
+          <span class="highlight">solutions digitales</span> et à l'<span class="highlight">automatisation</span>.
+          Nous combinons <span class="highlight">services</span>,
+          <span class="highlight">formations</span> et
+          <span class="highlight">accompagnement</span> pour propulser votre entreprise vers l'avenir.
+          Plus besoin de choisir entre faire, apprendre ou être guidé : combinez-les selon votre profil.
+        </p>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-value">100%</span>
+            <p class="stat-label">Satisfaction Client</p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">24h</span>
+            <p class="stat-label">Temps de Réponse</p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">3x</span>
+            <p class="stat-label">Gain de Productivité</p>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">0€</span>
+            <p class="stat-label">Devis Gratuit</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>2. Nos services & parcours</h2>
+
+        <div class="pillar-card services">
+          <h4>Automatisation Intelligente — Clé en main</h4>
+          <p>Automatisez vos tâches répétitives grâce à l'IA et boostez votre efficacité de 300%.</p>
+          <ul>
+            <li>Workflows automatisés & Intégration API</li>
+            <li>Sites vitrines, Landing pages & E-commerce léger</li>
+            <li>SEO technique, Tracking & Analytics</li>
+            <li>Rapports en temps réel</li>
+          </ul>
+          <p><em>Pour ceux qui veulent déléguer la technique.</em></p>
+          <p class="price">Livraison 2-4 semaines • À partir de 300 €</p>
+        </div>
+
+        <div class="pillar-card formation">
+          <h4>Formations — Numérique & Technologies</h4>
+          <p>Formations pratiques dans le numérique et les technologies pour maîtriser vos outils.</p>
+          <ul>
+            <li>Bootcamps No-code & Low-code</li>
+            <li>Marketing de contenu & Copywriting</li>
+            <li>CRM, Ops Marketing & Process</li>
+          </ul>
+          <p><em>Pour ceux qui veulent maîtriser leur outil.</em></p>
+          <p class="price">À partir de 20 €</p>
+        </div>
+
+        <div class="pillar-card coaching">
+          <h4>Conseil & Stratégie IA — À votre rythme</h4>
+          <p>Bénéficiez d'une expertise pointue pour intégrer l'IA à votre business.</p>
+          <ul>
+            <li>Audit IA & Roadmap stratégique</li>
+            <li>Mentorat 1:1 & Suivi de projet</li>
+            <li>Formation équipes & Revues stratégiques</li>
+          </ul>
+          <p><em>Pour ne jamais rester bloqué.</em></p>
+          <p class="price">Sur devis</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>3. Tarifs indicatifs</h2>
+        <div class="tarifs-wrapper">
+        <table class="tarifs-table">
+          <thead>
+            <tr>
+              <th>Offre</th>
+              <th>Description</th>
+              <th>Tarif</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Devis / Diagnostic</td>
+              <td>20 min d'échange pour définir votre stratégie digitale</td>
+              <td class="price-cell">Gratuit</td>
+            </tr>
+            <tr>
+              <td>Landing Page</td>
+              <td>Création + hébergement + optimisation</td>
+              <td class="price-cell">300 € - 2 500 €</td>
+            </tr>
+            <tr>
+              <td>Automatisation</td>
+              <td>Workflows, intégrations API, rapports temps réel</td>
+              <td class="price-cell">Sur devis</td>
+            </tr>
+            <tr>
+              <td>Formation / Bootcamp</td>
+              <td>Numérique & technologies, 4-6 semaines</td>
+              <td class="price-cell">10 € - 890 €</td>
+            </tr>
+            <tr>
+              <td>Pack Services + Coaching</td>
+              <td>Livrables + suivi mensuel + accompagnement premium</td>
+              <td class="price-cell">Sur devis</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        <p class="tarifs-note">
+          * Les tarifs sont donnés à titre indicatif. Livraison en 2-4 semaines pour les projets services.
+          Un devis personnalisé vous sera proposé après le diagnostic.
+        </p>
+      </section>
+
+      <section>
+        <h2>4. Pourquoi choisir Trevixia ?</h2>
+        <ul>
+          <li><strong>Rapidité d'exécution :</strong> Livraison en 2-4 semaines grâce à nos processus optimisés et l'automatisation</li>
+          <li><strong>Solutions sur-mesure :</strong> Chaque projet est unique. Nous adaptons nos solutions à vos besoins spécifiques</li>
+          <li><strong>Accompagnement premium :</strong> Un expert dédié à votre projet, disponible pour vous accompagner</li>
+          <li><strong>Sécurité garantie :</strong> Conformité RGPD, chiffrement des données et sauvegardes automatiques</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. Pour qui et comment choisir ?</h2>
+        <div class="profile-grid">
+          <div class="profile-card">
+            <span class="badge urgent">Urgent</span>
+            <h4>L'Entrepreneur Pressé</h4>
+            <p>"Je veux des résultats maintenant, sans me former à tout."</p>
+            <p><strong>→ Pack Services + Coaching light</strong></p>
+          </div>
+          <div class="profile-card">
+            <span class="badge apprenant">Apprenant</span>
+            <h4>L'Étudiant / Junior</h4>
+            <p>"Je veux construire mon CV et apprendre en faisant."</p>
+            <p><strong>→ Parcours Formation + Projet</strong></p>
+          </div>
+          <div class="profile-card">
+            <span class="badge batisseur">Bâtisseur</span>
+            <h4>Le Porteur de Projet</h4>
+            <p>"Je construis sur le long terme avec un budget maîtrisé."</p>
+            <p><strong>→ Diagnostic + Modules Essentiels</strong></p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>6. Prochaines étapes</h2>
+        <p>
+          Réservez votre <strong>Devis / Diagnostic gratuit</strong> (20 min) pour
+          définir ensemble la solution adaptée à votre profil. Simulez votre devis
+          directement sur notre site.
+        </p>
+        <div class="cta-box">
+          <p class="contact-line">
+            <strong>Site :</strong>
+            <a href="https://trevixia-web.netlify.app/" target="_blank" rel="noopener noreferrer"
+              >trevixia-web.netlify.app</a
+            >
+            (Services & Simulateur de devis)
+          </p>
+          <p class="contact-line">
+            <strong>Formations :</strong>
+            <a href="https://trevi-inscription.vercel.app/" target="_blank" rel="noopener noreferrer"
+              >trevi-inscription.vercel.app</a
+            >
+          </p>
+          <p class="contact-line">
+            <strong>Email :</strong>
+            <a href="mailto:viryon.ngoulou@gmail.com">viryon.ngoulou@gmail.com</a>
+            / <a href="mailto:trevixiacontact@gmail.com">trevixiacontact@gmail.com</a
+            >
+          </p>
+          <p class="contact-line">
+            <strong>Téléphone :</strong> +33 (0)7 58 14 62 61
+          </p>
+          <p class="contact-line">
+            <strong>Localisation :</strong> Paris, France
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      // Optional: improve print UX - show hint before print
+      document
+        .querySelector(".download-pdf-btn")
+        .addEventListener("click", function () {
+          // In most browsers, Ctrl+P or Cmd+P will open print dialog
+          // User can select "Save as PDF" as destination
+        });
+    </script>
+  </body>
+</html>

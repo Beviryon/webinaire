@@ -1,0 +1,417 @@
+/* Guide Trevixia - Parcours & Tarifs */
+:root {
+  --brand-blue: #1e293b;
+  --brand-orange: #ff7a59;
+  --gray-600: #475569;
+  --gray-500: #64748b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  color: var(--brand-blue);
+  background: #f8fafc;
+  line-height: 1.6;
+}
+
+.brand-font {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Floating Download Button - Screen only */
+.download-pdf-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--brand-orange);
+  color: white !important;
+  padding: 1rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(255, 122, 89, 0.4);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  border: none;
+  font-size: 0.95rem;
+  z-index: 1000;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.download-pdf-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 122, 89, 0.5);
+}
+.download-pdf-btn:active {
+  transform: translateY(0);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* Header */
+.guide-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 4px solid var(--brand-orange);
+}
+.guide-header .logo {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--brand-blue);
+  margin-bottom: 0.5rem;
+}
+.guide-header .tagline {
+  color: var(--gray-600);
+  font-size: 1.1rem;
+}
+.guide-header h1 {
+  font-size: 1.75rem;
+  margin: 1.5rem 0 0.5rem;
+  color: var(--brand-blue);
+}
+.guide-header .subtitle {
+  color: var(--gray-500);
+  font-size: 0.95rem;
+}
+.guide-header .subtitle.mb-0 {
+  margin-bottom: 0;
+}
+
+/* Sections */
+section {
+  margin-bottom: 2.5rem;
+}
+section h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.35rem;
+  color: var(--brand-blue);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+section h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  color: var(--brand-blue);
+  margin: 1.25rem 0 0.5rem;
+}
+section p,
+section li {
+  color: var(--gray-600);
+  margin: 0.5rem 0;
+}
+section ul {
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.highlight {
+  background: rgba(255, 122, 89, 0.1);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  color: var(--brand-orange);
+  font-weight: 600;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.stat-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  text-align: center;
+}
+.stat-value {
+  font-size: 1.25rem;
+  color: var(--brand-orange);
+  font-weight: 700;
+}
+.stat-label {
+  margin: 0.25rem 0 0;
+  font-size: 0.85rem;
+  color: var(--gray-600);
+}
+
+/* Cards */
+.pillar-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--brand-blue);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+.pillar-card.services {
+  border-left-color: #3b82f6;
+}
+.pillar-card.formation {
+  border-left-color: var(--brand-orange);
+}
+.pillar-card.coaching {
+  border-left-color: #64748b;
+}
+.pillar-card h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+.pillar-card .price {
+  font-weight: 700;
+  color: var(--brand-orange);
+  margin-top: 0.75rem;
+  font-size: 1rem;
+}
+
+/* Tarifs Table */
+.tarifs-wrapper {
+  overflow-x: auto;
+  margin: 1rem 0;
+  -webkit-overflow-scrolling: touch;
+}
+.tarifs-table {
+  width: 100%;
+  min-width: 400px;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  background: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+.tarifs-table th,
+.tarifs-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+.tarifs-table th {
+  background: var(--brand-blue);
+  color: white;
+  font-weight: 600;
+}
+.tarifs-table tr:last-child td {
+  border-bottom: none;
+}
+.tarifs-table .price-cell {
+  font-weight: 700;
+  color: var(--brand-orange);
+}
+
+/* Profiles */
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.profile-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+}
+.profile-card .badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.profile-card .badge.urgent {
+  background: #fee2e2;
+  color: #dc2626;
+}
+.profile-card .badge.apprenant {
+  background: #dcfce7;
+  color: #16a34a;
+}
+.profile-card .badge.batisseur {
+  background: #f3e8ff;
+  color: #7c3aed;
+}
+
+/* CTA */
+.cta-box {
+  background: var(--brand-blue);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.cta-box a {
+  color: var(--brand-orange);
+  font-weight: 700;
+  text-decoration: none;
+}
+.cta-box a:hover {
+  text-decoration: underline;
+}
+.cta-box p {
+  color: white;
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+}
+.cta-box .contact-line {
+  margin-bottom: 0.5rem;
+}
+
+.tarifs-note {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  margin-top: 0.5rem;
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: white;
+  }
+  .download-pdf-btn {
+    display: none !important;
+  }
+  .container {
+    max-width: 100%;
+    padding: 1rem;
+  }
+  .pillar-card,
+  .tarifs-table,
+  .profile-card,
+  .stat-card {
+    box-shadow: none;
+    border: 1px solid #e2e8f0;
+  }
+  section {
+    page-break-inside: avoid;
+  }
+}
+
+/* Responsive - Tablet */
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem 1.5rem;
+  }
+  .guide-header .logo {
+    font-size: 1.75rem;
+  }
+  .guide-header h1 {
+    font-size: 1.5rem;
+  }
+  section h2 {
+    font-size: 1.2rem;
+  }
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+  .tarifs-table {
+    font-size: 0.85rem;
+  }
+  .tarifs-table th,
+  .tarifs-table td {
+    padding: 0.6rem 0.75rem;
+  }
+  .download-pdf-btn {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    padding: 0.875rem 1.25rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 600px) {
+  .container {
+    padding: 1.5rem 1rem;
+  }
+  .guide-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+  }
+  .guide-header .logo {
+    font-size: 1.5rem;
+  }
+  .guide-header .tagline {
+    font-size: 1rem;
+  }
+  .guide-header h1 {
+    font-size: 1.35rem;
+    margin: 1rem 0 0.5rem;
+  }
+  .guide-header .subtitle {
+    font-size: 0.9rem;
+  }
+  section h2 {
+    font-size: 1.1rem;
+  }
+  .pillar-card {
+    padding: 1rem;
+  }
+  .pillar-card h4 {
+    font-size: 1rem;
+  }
+  .pillar-card .price {
+    font-size: 0.9rem;
+  }
+  .stats-grid {
+    gap: 0.75rem;
+  }
+  .stat-card {
+    padding: 0.75rem;
+  }
+  .stat-value {
+    font-size: 1.1rem;
+  }
+  .stat-label {
+    font-size: 0.75rem;
+  }
+  .cta-box {
+    padding: 1.25rem;
+  }
+  .cta-box p {
+    font-size: 0.85rem;
+  }
+  .download-pdf-btn {
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Responsive - Small Mobile */
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem 0.75rem;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  .tarifs-table th:nth-child(2),
+  .tarifs-table td:nth-child(2) {
+    display: none;
+  }
+  .tarifs-table {
+    min-width: 280px;
+  }
+}

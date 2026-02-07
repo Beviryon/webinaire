@@ -1,0 +1,221 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Open+Sans:wght@400;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="nav.css" rel="stylesheet" />
+    <link href="slide8.css" rel="stylesheet" />
+  </head>
+  <body class="has-nav">
+    <nav class="nav-wrapper">
+      <div class="nav-container">
+        <a href="index.html" class="nav-brand"><i class="fa-solid fa-layer-group"></i><span>TREVIXIA</span></a>
+        <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+        <div class="nav-links">
+          <a href="index.html">Accueil</a>
+          <a href="slide1.html">1</a>
+          <a href="slide2.html">2</a>
+          <a href="slide3.html">3</a>
+          <a href="slide4.html">4</a>
+          <a href="slide5.html">5</a>
+          <a href="slide6.html">6</a>
+          <a href="slide7.html">7</a>
+          <a href="slide8.html" class="active">8</a>
+          <a href="slide9.html">9</a>
+          <a href="guide.html" class="nav-guide"><i class="fa-solid fa-file-pdf mr-1"></i> Le Guide</a>
+        </div>
+      </div>
+    </nav>
+    <div class="slide-container">
+      <!-- Header -->
+      <div
+        class="px-12 pt-8 pb-4 flex justify-between items-center bg-white border-b border-gray-100 z-20"
+      >
+        <div>
+          <div class="flex items-center space-x-2 mb-1">
+            <div class="live-dot"></div>
+            <p
+              class="text-xs font-bold text-red-500 uppercase tracking-widest m-0"
+            >
+              Session Live
+            </p>
+          </div>
+          <h1 class="brand-font text-3xl font-bold text-brand-blue m-0">
+            Questions &amp; Réponses
+          </h1>
+        </div>
+        <div class="flex items-center space-x-2 opacity-80">
+          <div
+            class="w-8 h-8 bg-brand-blue rounded flex items-center justify-center text-white text-sm"
+          >
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <span
+            class="brand-font font-bold text-lg text-brand-blue tracking-tight"
+            >TREVIXIA</span
+          >
+        </div>
+      </div>
+      <!-- Main Content -->
+      <div class="flex-1 p-10 flex gap-12 overflow-hidden bg-slate-50 relative">
+        <!-- Decorative Background Elements -->
+        <div
+          class="absolute bottom-0 right-0 w-64 h-64 bg-orange-100 rounded-tl-full opacity-30 z-0"
+        ></div>
+        <div
+          class="absolute top-20 left-1/3 w-32 h-32 bg-blue-100 rounded-full opacity-30 z-0 blur-xl"
+        ></div>
+        <!-- Left Column: Instructions (40%) -->
+        <div class="w-5/12 flex flex-col z-10">
+          <div class="mb-8">
+            <h2 class="brand-font text-2xl font-bold text-brand-blue mb-2 m-0">
+              À vous de jouer !
+            </h2>
+            <p class="text-gray-600 m-0">
+              Nous sommes là pour lever tous vos doutes.
+            </p>
+          </div>
+          <div class="space-y-4 mb-8">
+            <div class="instruction-step">
+              <div
+                class="w-10 h-10 bg-blue-50 text-brand-blue rounded-lg flex items-center justify-center mr-4 text-xl"
+              >
+                <i class="fa-regular fa-comment-dots"></i>
+              </div>
+              <div>
+                <p class="font-bold text-brand-blue m-0 mb-1">
+                  Posez vos questions
+                </p>
+                <p class="text-xs text-gray-500 m-0">
+                  Utilisez l'onglet "Chat" ou "Q&amp;A" maintenant.
+                </p>
+              </div>
+            </div>
+            <div class="instruction-step">
+              <div
+                class="w-10 h-10 bg-orange-50 text-brand-orange rounded-lg flex items-center justify-center mr-4 text-xl"
+              >
+                <i class="fa-solid fa-thumbs-up"></i>
+              </div>
+              <div>
+                <p class="font-bold text-brand-blue m-0 mb-1">
+                  Votez pour les sujets
+                </p>
+                <p class="text-xs text-gray-500 m-0">
+                  Faites remonter les questions prioritaires.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Trust Badge -->
+          <div class="guarantee-badge mt-auto">
+            <i class="fa-solid fa-shield-heart mr-3 text-xl"></i>
+            <div>
+              <p class="font-bold text-sm m-0">Transparence Totale</p>
+              <p class="text-xs m-0">
+                Pas de tabou, pas de pitch agressif. Juste des réponses.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Vertical Divider -->
+        <div class="w-px bg-gray-200 h-full z-10"></div>
+        <!-- Right Column: Frequent Topics (60%) -->
+        <div class="w-7/12 flex flex-col z-10">
+          <div class="flex items-center mb-6">
+            <i class="fa-solid fa-tags text-brand-orange mr-3"></i>
+            <h3 class="brand-font text-xl font-bold text-brand-blue m-0">
+              Thèmes fréquents à clarifier
+            </h3>
+          </div>
+          <div class="flex-1 overflow-y-auto pr-2">
+            <!-- Topic 1: Budget -->
+            <div class="topic-card group">
+              <div
+                class="icon-circle bg-green-50 text-green-600 group-hover:bg-green-100 transition-colors"
+              >
+                <i class="fa-solid fa-coins"></i>
+              </div>
+              <div>
+                <p class="font-bold text-brand-blue text-lg mb-1 m-0">
+                  Budget &amp; Options
+                </p>
+                <p class="text-sm text-gray-500 italic mb-2 m-0">
+                  "Combien ça coûte vraiment pour démarrer ?"
+                </p>
+                <p
+                  class="text-xs text-gray-400 m-0 border-t border-gray-100 pt-2 mt-2 group-hover:text-brand-orange transition-colors"
+                >
+                  <i class="fa-solid fa-arrow-right mr-1"></i> On détaille les
+                  packs d'entrée
+                </p>
+              </div>
+            </div>
+            <!-- Topic 2: Deadlines -->
+            <div class="topic-card group">
+              <div
+                class="icon-circle bg-purple-50 text-purple-600 group-hover:bg-purple-100 transition-colors"
+              >
+                <i class="fa-solid fa-hourglass-half"></i>
+              </div>
+              <div>
+                <p class="font-bold text-brand-blue text-lg mb-1 m-0">
+                  Délais &amp; Ressources
+                </p>
+                <p class="text-sm text-gray-500 italic mb-2 m-0">
+                  "Combien de temps avant les premiers résultats ?"
+                </p>
+                <p
+                  class="text-xs text-gray-400 m-0 border-t border-gray-100 pt-2 mt-2 group-hover:text-brand-orange transition-colors"
+                >
+                  <i class="fa-solid fa-arrow-right mr-1"></i> Timeline type sur
+                  30/60/90 jours
+                </p>
+              </div>
+            </div>
+            <!-- Topic 3: Engagement -->
+            <div class="topic-card group">
+              <div
+                class="icon-circle bg-blue-50 text-brand-blue group-hover:bg-blue-100 transition-colors"
+              >
+                <i class="fa-solid fa-battery-full"></i>
+              </div>
+              <div>
+                <p class="font-bold text-brand-blue text-lg mb-1 m-0">
+                  Niveau d'engagement
+                </p>
+                <p class="text-sm text-gray-500 italic mb-2 m-0">
+                  "Quelle charge de travail de mon côté ?"
+                </p>
+                <p
+                  class="text-xs text-gray-400 m-0 border-t border-gray-100 pt-2 mt-2 group-hover:text-brand-orange transition-colors"
+                >
+                  <i class="fa-solid fa-arrow-right mr-1"></i> Distinction
+                  "Faire" vs "Déléguer"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Progress Bar -->
+      <div class="h-1 w-full bg-gray-200 flex absolute bottom-0 left-0 z-20">
+        <div class="h-full bg-brand-orange w-[85%]"></div>
+        <!-- Progress bar ~6/7th -->
+      </div>
+    </div>
+  </body>
+</html>

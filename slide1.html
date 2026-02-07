@@ -1,0 +1,184 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Open+Sans:wght@400;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="nav.css" rel="stylesheet" />
+    <link href="slide1.css" rel="stylesheet" />
+  </head>
+  <body class="has-nav">
+    <nav class="nav-wrapper">
+      <div class="nav-container">
+        <a href="index.html" class="nav-brand"><i class="fa-solid fa-layer-group"></i><span>TREVIXIA</span></a>
+        <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+        <div class="nav-links">
+          <a href="index.html">Accueil</a>
+          <a href="slide1.html" class="active">1</a>
+          <a href="slide2.html">2</a>
+          <a href="slide3.html">3</a>
+          <a href="slide4.html">4</a>
+          <a href="slide5.html">5</a>
+          <a href="slide6.html">6</a>
+          <a href="slide7.html">7</a>
+          <a href="slide8.html">8</a>
+          <a href="slide9.html">9</a>
+          <a href="guide.html" class="nav-guide"><i class="fa-solid fa-file-pdf mr-1"></i> Le Guide</a>
+        </div>
+      </div>
+    </nav>
+    <div class="slide-container">
+      <!-- Decorative Background Element -->
+      <div
+        class="circle-decor"
+        style="width: 400px; height: 400px; top: -100px; left: -100px"
+      ></div>
+      <div
+        class="circle-decor"
+        style="
+          width: 200px;
+          height: 200px;
+          bottom: 50px;
+          left: 40%;
+          background-color: rgba(30, 41, 59, 0.03);
+        "
+      ></div>
+      <!-- Left Content Section -->
+      <div class="flex-1 flex flex-col justify-center px-20 z-10 relative">
+        <!-- Header / Logo Area -->
+        <div class="absolute top-12 left-20 flex items-center space-x-3">
+          <div
+            class="w-10 h-10 bg-brand-blue rounded flex items-center justify-center text-white text-xl"
+          >
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <span
+            class="brand-font font-bold text-2xl text-brand-blue tracking-tight"
+            >TREVIXIA</span
+          >
+        </div>
+        <!-- Main Content -->
+        <div class="mt-10">
+          <div
+            class="inline-flex items-center space-x-2 bg-blue-50 px-4 py-2 rounded-full mb-6 border border-blue-100"
+          >
+            <span class="w-2 h-2 rounded-full bg-brand-orange"></span>
+            <p
+              class="text-brand-blue font-bold text-sm uppercase tracking-wider m-0"
+            >
+              Webinaire Exclusif
+            </p>
+          </div>
+          <h1
+            class="brand-font font-extrabold text-6xl text-brand-blue leading-tight mb-4"
+          >
+            Services Web <br />
+            <span class="font-light text-gray-400">ou</span> Formation ?
+          </h1>
+          <p
+            class="brand-font text-3xl text-gray-600 font-medium leading-normal"
+          >
+            Et si vous n’aviez plus à choisir ?
+          </p>
+          <div class="accent-bar"></div>
+          <div class="flex items-start space-x-4 mb-8">
+            <div class="bg-orange-50 p-3 rounded-lg">
+              <i class="fa-solid fa-bolt text-brand-orange text-2xl"></i>
+            </div>
+            <div>
+              <p class="brand-font text-xl font-bold text-brand-blue m-0">
+                Moins d’effort, plus d’impact
+              </p>
+              <p class="text-gray-500 text-sm mt-1 m-0">
+                Découvrez notre vision de l'écosystème digital.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Footer / Details -->
+        <div
+          class="flex items-center space-x-12 mt-4 pt-8 border-t border-gray-100"
+        >
+          <div class="flex items-center space-x-3 text-gray-700">
+            <i class="fa-regular fa-calendar text-brand-orange text-xl"></i>
+            <p class="font-semibold text-lg m-0">7 Février 2026</p>
+          </div>
+          <div class="flex items-center space-x-3 text-gray-700">
+            <i class="fa-regular fa-clock text-brand-orange text-xl"></i>
+            <p class="font-semibold text-lg m-0">19h30 (UTC+1)</p>
+          </div>
+        </div>
+      </div>
+      <!-- Right Image Section -->
+      <div class="hero-image-container bg-brand-blue">
+        <img
+          alt="Team collaborating"
+          class="hero-image"
+          src="https://page.gensparksite.com/slides_images/ad0180775f645fbf80d6ec3afb832395.webp"
+        />
+        <!-- Overlay Content on Image -->
+        <div class="absolute bottom-12 left-12 right-12">
+          <div
+            class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-orange-500"
+          >
+            <div class="flex items-start space-x-4">
+              <!-- <img alt="Speaker" class="w-12 h-12 rounded-full object-cover border-2 border-white shadow-sm" src="https://page.gensparksite.com/slides_images/5967fdb496875bb1d87ca8395690c062.webp"/> -->
+              <div>
+                <p
+                  class="text-xs text-gray-500 font-bold uppercase tracking-wide mb-1 m-0"
+                >
+                  Présenté par
+                </p>
+                <p class="brand-font font-bold text-brand-blue text-lg m-0">
+                  Beviryon
+                </p>
+                <p class="text-sm text-gray-600 mt-1 m-0">
+                  Développeur FullStack, Data & IA
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Decorative geometric element -->
+        <div class="absolute top-0 right-0 p-8">
+          <svg
+            fill="none"
+            height="100"
+            viewbox="0 0 100 100"
+            width="100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="50"
+              cy="50"
+              r="48"
+              stroke="white"
+              stroke-opacity="0.2"
+              stroke-width="2"
+            ></circle>
+            <circle
+              cx="50"
+              cy="50"
+              r="30"
+              stroke="white"
+              stroke-opacity="0.4"
+              stroke-width="2"
+            ></circle>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,254 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Open+Sans:wght@400;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="nav.css" rel="stylesheet" />
+    <link href="slide9.css" rel="stylesheet" />
+  </head>
+  <body class="has-nav">
+    <nav class="nav-wrapper">
+      <div class="nav-container">
+        <a href="index.html" class="nav-brand"><i class="fa-solid fa-layer-group"></i><span>TREVIXIA</span></a>
+        <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+        <div class="nav-links">
+          <a href="index.html">Accueil</a>
+          <a href="slide1.html">1</a>
+          <a href="slide2.html">2</a>
+          <a href="slide3.html">3</a>
+          <a href="slide4.html">4</a>
+          <a href="slide5.html">5</a>
+          <a href="slide6.html">6</a>
+          <a href="slide7.html">7</a>
+          <a href="slide8.html">8</a>
+          <a href="slide9.html" class="active">9</a>
+          <a href="guide.html" class="nav-guide"><i class="fa-solid fa-file-pdf mr-1"></i> Le Guide</a>
+        </div>
+      </div>
+    </nav>
+    <div class="slide-container">
+      <!-- Header -->
+      <div
+        class="px-12 pt-8 pb-4 flex justify-between items-center bg-white border-b border-gray-100 z-20"
+      >
+        <div>
+          <div class="flex items-center space-x-2 mb-1">
+            <span class="w-2 h-2 rounded-full bg-brand-orange"></span>
+            <p
+              class="text-xs font-bold text-gray-500 uppercase tracking-widest m-0"
+            >
+              Conclusion
+            </p>
+          </div>
+          <h1 class="brand-font text-3xl font-bold text-brand-blue m-0">
+            Récapitulatif &amp; Prochaines étapes
+          </h1>
+        </div>
+        <div class="flex items-center space-x-2 opacity-80">
+          <div
+            class="w-8 h-8 bg-brand-blue rounded flex items-center justify-center text-white text-sm"
+          >
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <span
+            class="brand-font font-bold text-lg text-brand-blue tracking-tight"
+            >TREVIXIA</span
+          >
+        </div>
+      </div>
+      <!-- Main Content -->
+      <div class="flex-1 flex overflow-hidden">
+        <!-- Left Sidebar: Recap (33%) -->
+        <div
+          class="w-1/3 bg-slate-50 p-10 flex flex-col justify-center border-r border-gray-200 z-10"
+        >
+          <h2 class="brand-font text-2xl font-bold text-brand-blue mb-6 m-0">
+            <i class="fa-solid fa-check-double text-green-500 mr-2"></i> Ce
+            qu'il faut retenir
+          </h2>
+          <div class="space-y-2">
+            <div class="recap-item">
+              <div class="mr-3 mt-1 text-green-500">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+              <div>
+                <p class="font-bold text-brand-blue text-sm mb-1 m-0">
+                  La fin du dilemme
+                </p>
+                <p class="text-xs text-gray-600 leading-relaxed m-0">
+                  Plus besoin de choisir : combinez Faire, Apprendre et Être
+                  guidé pour avancer.
+                </p>
+              </div>
+            </div>
+            <div class="recap-item">
+              <div class="mr-3 mt-1 text-green-500">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+              <div>
+                <p class="font-bold text-brand-blue text-sm mb-1 m-0">
+                  L'écosystème Trevixia
+                </p>
+                <p class="text-xs text-gray-600 leading-relaxed m-0">
+                  Une méthodologie unique "Moins d'effort, plus d'impact"
+                  orientée résultats.
+                </p>
+              </div>
+            </div>
+            <div class="recap-item">
+              <div class="mr-3 mt-1 text-green-500">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+              <div>
+                <p class="font-bold text-brand-blue text-sm mb-1 m-0">
+                  Sur-mesure
+                </p>
+                <p class="text-xs text-gray-600 leading-relaxed m-0">
+                  Des solutions (Services, Formation, Coaching) adaptées à votre
+                  profil.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 pt-6 border-t border-gray-200">
+            <p class="text-brand-blue font-bold text-lg m-0">
+              Merci de votre attention !
+            </p>
+            <p class="text-sm text-gray-500 m-0">
+              L'équipe reste disponible pour vous.
+            </p>
+          </div>
+        </div>
+        <!-- Right Area: CTAs (67%) -->
+        <div class="w-2/3 p-10 bg-white relative">
+          <!-- Decorative Background -->
+          <div
+            class="absolute top-0 right-0 w-64 h-64 bg-blue-50 rounded-bl-full opacity-50 z-0"
+          ></div>
+          <div class="relative z-10 h-full flex flex-col">
+            <div class="flex items-center mb-8">
+              <i class="fa-solid fa-rocket text-brand-orange text-2xl mr-3"></i>
+              <h2
+                class="brand-font text-3xl font-extrabold text-brand-blue m-0"
+              >
+                Passez à l'action
+              </h2>
+            </div>
+            <div class="grid grid-cols-3 gap-6 flex-1">
+              <!-- CTA 1: Diagnostic (Priority) -->
+              <div
+                class="cta-card cta-primary shadow-lg transform scale-105 border-orange-100"
+              >
+                <div
+                  class="absolute top-0 right-0 bg-brand-orange text-white text-[10px] font-bold px-2 py-1 rounded-bl"
+                >
+                  POPULAIRE
+                </div>
+                <div class="cta-icon-box bg-orange-50 text-brand-orange">
+                  <i class="fa-solid fa-calendar-check"></i>
+                </div>
+                <h3
+                  class="brand-font font-bold text-lg text-brand-blue mb-2 m-0"
+                >
+                  Diagnostic
+                </h3>
+                <p class="text-xs text-gray-500 mb-6 m-0 px-2">
+                  20 min d'échange pour définir votre stratégie digitale.
+                </p>
+                <button
+                  class="btn-action bg-brand-orange text-white hover:bg-orange-600 shadow-md border-none"
+                >
+                  Réserver (Gratuit)
+                </button>
+              </div>
+              <!-- CTA 2: Bootcamp -->
+              <div class="cta-card cta-secondary">
+                <div class="cta-icon-box bg-blue-50 text-brand-blue">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <h3
+                  class="brand-font font-bold text-lg text-brand-blue mb-2 m-0"
+                >
+                  Bootcamp
+                </h3>
+                <p class="text-xs text-gray-500 mb-6 m-0 px-2">
+                  Rejoignez la prochaine cohorte de formation intensive.
+                </p>
+                <button
+                  class="btn-action bg-brand-blue text-white hover:bg-slate-700 border-none"
+                >
+                  M'inscrire
+                </button>
+              </div>
+              <!-- CTA 3: Guide -->
+              <div class="cta-card cta-tertiary">
+                <div class="cta-icon-box bg-gray-100 text-gray-600">
+                  <i class="fa-solid fa-file-arrow-down"></i>
+                </div>
+                <h3
+                  class="brand-font font-bold text-lg text-brand-blue mb-2 m-0"
+                >
+                  Le Guide
+                </h3>
+                <p class="text-xs text-gray-500 mb-6 m-0 px-2">
+                  PDF détaillé des parcours et des tarifs.
+                </p>
+                <a
+                  href="guide.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-action bg-white text-gray-600 border border-gray-300 hover:bg-gray-50 hover:text-brand-orange hover:border-brand-orange"
+                >
+                  Télécharger
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer: Contact Info -->
+      <div class="contact-footer z-20 relative shadow-inner">
+        <div class="flex items-center space-x-8">
+          <div class="flex items-center">
+            <i class="fa-solid fa-globe text-brand-orange mr-2"></i>
+            <span class="text-sm font-semibold">https://trevixia-web.netlify.app/</span>
+          </div>
+          <div class="flex items-center">
+            <i class="fa-solid fa-envelope text-brand-orange mr-2"></i>
+            <span class="text-sm font-semibold">trevixiacontact@gmail.com</span>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <span class="text-sm mr-4 text-gray-400">Suivez-nous :</span>
+          <a class="social-icon text-white" href="#"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a class="social-icon text-white" href="#"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a class="social-icon text-white" href="#"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+      <!-- Bottom Progress Bar -->
+      <div class="h-1 w-full bg-gray-200 flex absolute bottom-0 left-0 z-30">
+        <div class="h-full bg-brand-orange w-full"></div>
+        <!-- Completed -->
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+/* Slide 8 - Questions & Réponses */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+.slide-container {
+  width: 1280px;
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #f8fafc;
+  position: relative;
+}
+.brand-font {
+  font-family: "Montserrat", sans-serif;
+}
+.text-brand-blue {
+  color: #1e293b;
+}
+.text-brand-orange {
+  color: #ff7a59;
+}
+.bg-brand-blue {
+  background-color: #1e293b;
+}
+.bg-brand-orange {
+  background-color: #ff7a59;
+}
+.bg-brand-light {
+  background-color: #f1f5f9;
+}
+.border-brand-orange {
+  border-color: #ff7a59;
+}
+
+/* Q&A Specific Styles */
+.instruction-step {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
+  border-left: 5px solid #ff7a59;
+  transition: transform 0.2s;
+}
+.instruction-step:hover {
+  transform: translateX(5px);
+}
+
+.topic-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+.topic-card:hover {
+  border-color: #ff7a59;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.icon-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+}
+
+.guarantee-badge {
+  background-color: #ecfdf5;
+  border: 1px solid #10b981;
+  color: #065f46;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
+
+/* Pulse Animation for Live Indicator */
+.live-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ef4444;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  margin-right: 8px;
+  animation: pulse-red 2s infinite;
+}
+
+@keyframes pulse-red {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 6px rgba(239, 68, 68, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+  }
+}
+
+/* Responsive - Desktop */
+@media (max-width: 1280px) and (min-width: 769px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+  .slide-container {
+    transform: scale(min(100vw / 1280, 100vh / 720));
+    transform-origin: top center;
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+  .slide-container {
+    width: 100% !important;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto !important;
+    min-height: 100vh;
+    transform: none !important;
+    overflow-y: auto;
+  }
+  .slide-container > div:first-child[class*="px-12"] {
+    padding: 1rem !important;
+  }
+  .slide-container > div:first-child h1 {
+    font-size: 1.25rem !important;
+  }
+  .slide-container > div:nth-child(2) {
+    flex-direction: column !important;
+    padding: 1rem !important;
+    overflow-y: auto !important;
+  }
+  .slide-container .w-5\/12 {
+    width: 100% !important;
+  }
+  .slide-container .w-7\/12 {
+    width: 100% !important;
+  }
+}

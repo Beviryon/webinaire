@@ -1,0 +1,229 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Open+Sans:wght@400;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="nav.css" rel="stylesheet" />
+    <link href="slide3.css" rel="stylesheet" />
+  </head>
+  <body class="has-nav">
+    <nav class="nav-wrapper">
+      <div class="nav-container">
+        <a href="index.html" class="nav-brand"><i class="fa-solid fa-layer-group"></i><span>TREVIXIA</span></a>
+        <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+        <div class="nav-links">
+          <a href="index.html">Accueil</a>
+          <a href="slide1.html">1</a>
+          <a href="slide2.html">2</a>
+          <a href="slide3.html" class="active">3</a>
+          <a href="slide4.html">4</a>
+          <a href="slide5.html">5</a>
+          <a href="slide6.html">6</a>
+          <a href="slide7.html">7</a>
+          <a href="slide8.html">8</a>
+          <a href="slide9.html">9</a>
+          <a href="guide.html" class="nav-guide"><i class="fa-solid fa-file-pdf mr-1"></i> Le Guide</a>
+        </div>
+      </div>
+    </nav>
+    <div class="slide-container">
+      <!-- Header -->
+      <div
+        class="px-12 pt-8 pb-4 flex justify-between items-center bg-white border-b border-gray-100 z-20"
+      >
+        <div>
+          <div class="flex items-center space-x-2 mb-1">
+            <span class="w-2 h-2 rounded-full bg-brand-orange"></span>
+            <p
+              class="text-xs font-bold text-gray-500 uppercase tracking-widest m-0"
+            >
+              Contexte
+            </p>
+          </div>
+          <h1 class="brand-font text-3xl font-bold text-brand-blue m-0">
+            Le dilemme actuel
+          </h1>
+        </div>
+        <div class="flex items-center space-x-2 opacity-80">
+          <div
+            class="w-8 h-8 bg-brand-blue rounded flex items-center justify-center text-white text-sm"
+          >
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <span
+            class="brand-font font-bold text-lg text-brand-blue tracking-tight"
+            >TREVIXIA</span
+          >
+        </div>
+      </div>
+      <!-- Main Content -->
+      <div class="flex-1 flex relative p-10 bg-slate-50">
+        <!-- Center Arrow Indicator -->
+        <div class="center-arrow">
+          <i class="fa-solid fa-arrow-right text-brand-orange text-2xl"></i>
+        </div>
+        <!-- Left Column: The Problem -->
+        <div
+          class="w-1/2 pr-12 flex flex-col justify-center border-r border-dashed border-gray-300"
+        >
+          <div class="column-header border-brand-blue">
+            <div class="flex items-center mb-2">
+              <i
+                class="fa-solid fa-triangle-exclamation text-brand-blue text-xl mr-3 opacity-80"
+              ></i>
+              <h2 class="brand-font text-2xl font-bold text-brand-blue m-0">
+                Pourquoi ce choix pose problème
+              </h2>
+            </div>
+            <p class="text-gray-500 text-sm m-0 pl-8">
+              Les frictions du modèle traditionnel
+            </p>
+          </div>
+          <div class="space-y-2">
+            <div class="list-item">
+              <div class="icon-box bg-blue-50 text-brand-blue">
+                <i class="fa-solid fa-people-arrows"></i>
+              </div>
+              <div>
+                <p class="font-bold text-brand-blue mb-1 m-0">
+                  Approche en silos
+                </p>
+                <p class="text-sm text-gray-600 m-0">
+                  Se former sans produire ou déléguer sans comprendre les
+                  enjeux.
+                </p>
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="icon-box bg-blue-50 text-brand-blue">
+                <i class="fa-solid fa-stopwatch"></i>
+              </div>
+              <div>
+                <p class="font-bold text-brand-blue mb-1 m-0">
+                  Lenteur d’exécution
+                </p>
+                <p class="text-sm text-gray-600 m-0">
+                  Aller-retours incessants et dispersion d'énergie entre
+                  prestataires.
+                </p>
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="icon-box bg-blue-50 text-brand-blue">
+                <i class="fa-solid fa-shuffle"></i>
+              </div>
+              <div>
+                <p class="font-bold text-brand-blue mb-1 m-0">
+                  Incohérence stratégique
+                </p>
+                <p class="text-sm text-gray-600 m-0">
+                  Messages, outils et priorités souvent mal alignés.
+                </p>
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="icon-box bg-blue-50 text-brand-blue">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div>
+                <p class="font-bold text-brand-blue mb-1 m-0">
+                  Surcharge cognitive
+                </p>
+                <p class="text-sm text-gray-600 m-0">
+                  Trop d'outils à gérer, pas assez de méthode structurée.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right Column: The Consequences -->
+        <div class="w-1/2 pl-12 flex flex-col justify-center">
+          <div class="column-header border-brand-orange">
+            <div class="flex items-center mb-2">
+              <i
+                class="fa-solid fa-chart-line-down text-brand-orange text-xl mr-3"
+              ></i>
+              <h2 class="brand-font text-2xl font-bold text-brand-orange m-0">
+                Les conséquences réelles
+              </h2>
+            </div>
+            <p class="text-gray-500 text-sm m-0 pl-8">
+              L'impact sur votre croissance
+            </p>
+          </div>
+          <div class="space-y-2">
+            <div class="list-item border-l-4 border-l-brand-orange">
+              <div class="icon-box bg-orange-50 text-brand-orange">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+              </div>
+              <div>
+                <p class="font-bold text-brand-blue mb-1 m-0">
+                  Time-to-market allongé
+                </p>
+                <p class="text-sm text-gray-600 m-0">
+                  Les projets prennent des mois au lieu de semaines. Coût
+                  d'opportunité élevé.
+                </p>
+              </div>
+            </div>
+            <div class="list-item border-l-4 border-l-brand-orange">
+              <div class="icon-box bg-orange-50 text-brand-orange">
+                <i class="fa-solid fa-money-bill-transfer"></i>
+              </div>
+              <div>
+                <p class="font-bold text-brand-blue mb-1 m-0">Budget dilué</p>
+                <p class="text-sm text-gray-600 m-0">
+                  Ressources gaspillées en essais/erreurs plutôt qu'en
+                  acquisition.
+                </p>
+              </div>
+            </div>
+            <div class="list-item border-l-4 border-l-brand-orange">
+              <div class="icon-box bg-orange-50 text-brand-orange">
+                <i class="fa-solid fa-scale-unbalanced"></i>
+              </div>
+              <div>
+                <p class="font-bold text-brand-blue mb-1 m-0">
+                  Qualité inégale
+                </p>
+                <p class="text-sm text-gray-600 m-0">
+                  Expérience client fragile due au manque de cohérence.
+                </p>
+              </div>
+            </div>
+            <div class="list-item border-l-4 border-l-brand-orange">
+              <div class="icon-box bg-orange-50 text-brand-orange">
+                <i class="fa-solid fa-face-tired"></i>
+              </div>
+              <div>
+                <p class="font-bold text-brand-blue mb-1 m-0">Démotivation</p>
+                <p class="text-sm text-gray-600 m-0">
+                  Épuisement des équipes ou des apprenants face au manque de
+                  résultats.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom Bar with Progress -->
+      <div class="h-1 w-full bg-gray-200 flex absolute bottom-0">
+        <div class="h-full bg-brand-orange w-[28%]"></div>
+        <!-- Progress bar ~2/7th -->
+      </div>
+    </div>
+  </body>
+</html>

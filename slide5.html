@@ -1,0 +1,239 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Open+Sans:wght@400;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="nav.css" rel="stylesheet" />
+    <link href="slide5.css" rel="stylesheet" />
+  </head>
+  <body class="has-nav">
+    <nav class="nav-wrapper">
+      <div class="nav-container">
+        <a href="index.html" class="nav-brand"><i class="fa-solid fa-layer-group"></i><span>TREVIXIA</span></a>
+        <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+        <div class="nav-links">
+          <a href="index.html">Accueil</a>
+          <a href="slide1.html">1</a>
+          <a href="slide2.html">2</a>
+          <a href="slide3.html">3</a>
+          <a href="slide4.html">4</a>
+          <a href="slide5.html" class="active">5</a>
+          <a href="slide6.html">6</a>
+          <a href="slide7.html">7</a>
+          <a href="slide8.html">8</a>
+          <a href="slide9.html">9</a>
+          <a href="guide.html" class="nav-guide"><i class="fa-solid fa-file-pdf mr-1"></i> Le Guide</a>
+        </div>
+      </div>
+    </nav>
+    <div class="slide-container">
+      <!-- Header -->
+      <div
+        class="px-12 pt-8 pb-4 flex justify-between items-center bg-white border-b border-gray-100 z-20"
+      >
+        <div>
+          <div class="flex items-center space-x-2 mb-1">
+            <span class="w-2 h-2 rounded-full bg-brand-orange"></span>
+            <p
+              class="text-xs font-bold text-gray-500 uppercase tracking-widest m-0"
+            >
+              La Solution
+            </p>
+          </div>
+          <h1 class="brand-font text-3xl font-bold text-brand-blue m-0">
+            La vision Trevixia
+          </h1>
+        </div>
+        <div class="flex items-center space-x-2 opacity-80">
+          <div
+            class="w-8 h-8 bg-brand-blue rounded flex items-center justify-center text-white text-sm"
+          >
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <span
+            class="brand-font font-bold text-lg text-brand-blue tracking-tight"
+            >TREVIXIA</span
+          >
+        </div>
+      </div>
+      <!-- Main Content -->
+      <div class="flex-1 flex flex-col p-10 relative">
+        <!-- Background Decorative Element -->
+        <div
+          class="absolute top-0 right-0 w-1/3 h-full bg-blue-50 z-0 opacity-50"
+        ></div>
+        <!-- Mantra Section -->
+        <div class="text-center mb-10 relative z-10">
+          <div
+            class="inline-block bg-orange-100 text-brand-orange px-6 py-2 rounded-full mb-4"
+          >
+            <p class="font-bold text-sm uppercase tracking-wider m-0">
+              Notre Mantra
+            </p>
+          </div>
+          <p class="brand-font text-4xl font-extrabold text-brand-blue m-0">
+            « Moins d’effort,
+            <span class="text-brand-orange">plus d’impact</span> »
+          </p>
+          <p class="text-gray-500 mt-2 text-lg m-0">
+            Un écosystème unique pour accélérer votre réussite digitale
+          </p>
+        </div>
+        <!-- Process Flow -->
+        <div
+          class="flex justify-between items-stretch gap-6 mb-12 relative z-10 px-4"
+        >
+          <!-- Step 1: Diagnostic -->
+          <div
+            class="process-card w-1/3 p-6 border-t-4 border-gray-300 flex flex-col"
+          >
+            <div
+              class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 mb-4 text-xl"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <h3 class="brand-font text-xl font-bold text-brand-blue mb-2 m-0">
+              1. Diagnostic
+            </h3>
+            <p class="text-gray-600 text-sm mb-4 m-0">
+              On aligne vos objectifs, vos ressources et vos priorités.
+            </p>
+            <ul class="text-sm text-gray-500 space-y-2 mt-auto">
+              <li class="flex items-center">
+                <i class="fa-solid fa-check text-green-500 mr-2"></i> Audit de
+                l'existant
+              </li>
+              <li class="flex items-center">
+                <i class="fa-solid fa-check text-green-500 mr-2"></i> Définition
+                du besoin
+              </li>
+            </ul>
+            <div class="arrow-connector">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <!-- Step 2: The Core (Highlighted) -->
+          <div
+            class="process-card w-1/3 p-6 border-t-4 border-brand-orange bg-white shadow-lg transform scale-105 ring-1 ring-orange-100 flex flex-col"
+          >
+            <div
+              class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-brand-orange text-white px-3 py-1 rounded text-xs font-bold uppercase tracking-wider"
+            >
+              La Méthode Trevixia
+            </div>
+            <div
+              class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-brand-orange mb-4 text-xl"
+            >
+              <i class="fa-solid fa-gears"></i>
+            </div>
+            <h3 class="brand-font text-xl font-bold text-brand-blue mb-4 m-0">
+              2. Production Guidée
+            </h3>
+            <div class="space-y-2 mb-4">
+              <div class="pillar-badge bg-blue-50 text-brand-blue">
+                <i class="fa-solid fa-hammer mr-2"></i> FAIRE (Services)
+              </div>
+              <div class="pillar-badge bg-orange-50 text-brand-orange">
+                <i class="fa-solid fa-graduation-cap mr-2"></i> APPRENDRE
+                (Formation)
+              </div>
+              <div class="pillar-badge bg-gray-100 text-gray-700">
+                <i class="fa-solid fa-hands-holding-circle mr-2"></i> GUIDER
+                (Coaching)
+              </div>
+            </div>
+            <p class="text-gray-600 text-sm italic m-0">
+              "On produit les livrables clés pendant que vous apprenez."
+            </p>
+            <div class="arrow-connector">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <!-- Step 3: Autonomy -->
+          <div
+            class="process-card w-1/3 p-6 border-t-4 border-brand-blue flex flex-col"
+          >
+            <div
+              class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-brand-blue mb-4 text-xl"
+            >
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+            <h3 class="brand-font text-xl font-bold text-brand-blue mb-2 m-0">
+              3. Autonomisation
+            </h3>
+            <p class="text-gray-600 text-sm mb-4 m-0">
+              Transfert de compétences pour piloter votre croissance.
+            </p>
+            <ul class="text-sm text-gray-500 space-y-2 mt-auto">
+              <li class="flex items-center">
+                <i class="fa-solid fa-check text-green-500 mr-2"></i> Templates
+                offerts
+              </li>
+              <li class="flex items-center">
+                <i class="fa-solid fa-check text-green-500 mr-2"></i> Maîtrise
+                des outils
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Use Cases Footer -->
+        <div
+          class="bg-white rounded-xl p-6 border border-gray-200 relative z-10"
+        >
+          <div class="flex items-center mb-4">
+            <i class="fa-solid fa-users-viewfinder text-brand-blue mr-2"></i>
+            <h4
+              class="brand-font font-bold text-brand-blue text-sm uppercase m-0"
+            >
+              Cas d'usage concrets
+            </h4>
+          </div>
+          <div class="grid grid-cols-3 gap-6">
+            <div class="case-card">
+              <p class="font-bold text-brand-blue text-sm mb-1 m-0">
+                Startup Early-stage
+              </p>
+              <p class="text-gray-600 text-xs m-0">
+                Création Landing Page + Traction + Crash Course Growth
+              </p>
+            </div>
+            <div class="case-card border-brand-blue">
+              <p class="font-bold text-brand-blue text-sm mb-1 m-0">
+                Indépendant / Freelance
+              </p>
+              <p class="text-gray-600 text-xs m-0">
+                Définition Offre + Tunnel de vente simple + Personal Branding
+              </p>
+            </div>
+            <div class="case-card border-gray-500">
+              <p class="font-bold text-brand-blue text-sm mb-1 m-0">
+                PME / TPE
+              </p>
+              <p class="text-gray-600 text-xs m-0">
+                Refonte Site Web + Mise en place CRM + Enablement Marketing
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Bar with Progress -->
+        <div class="h-1 w-full bg-gray-200 flex absolute bottom-0 left-0">
+          <div class="h-full bg-brand-orange w-[42%]"></div>
+          <!-- Progress bar ~3/7th -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webinaire Trevixia - Services Web ou Formation ?</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="nav.css" rel="stylesheet" />
+    <style>
+      :root {
+        --brand-blue: #1e293b;
+        --brand-orange: #ff7a59;
+      }
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+      .brand-font {
+        font-family: "Montserrat", sans-serif;
+      }
+      .slide-card {
+        transition: all 0.3s ease;
+      }
+      .slide-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+      }
+      .slide-card:hover .slide-arrow {
+        transform: translateX(4px);
+      }
+    </style>
+  </head>
+  <body class="has-nav bg-slate-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="nav-wrapper">
+      <div class="nav-container">
+        <a href="index.html" class="nav-brand">
+          <i class="fa-solid fa-layer-group"></i>
+          <span>TREVIXIA</span>
+        </a>
+        <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="nav-links">
+          <a href="index.html" class="active">Accueil</a>
+          <a href="slide1.html">1</a>
+          <a href="slide2.html">2</a>
+          <a href="slide3.html">3</a>
+          <a href="slide4.html">4</a>
+          <a href="slide5.html">5</a>
+          <a href="slide6.html">6</a>
+          <a href="slide7.html">7</a>
+          <a href="slide8.html">8</a>
+          <a href="slide9.html">9</a>
+          <a href="guide.html" class="nav-guide">
+            <i class="fa-solid fa-file-pdf mr-1"></i> Le Guide
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="bg-white border-b border-slate-100">
+      <div class="max-w-4xl mx-auto px-6 py-16 text-center">
+        <div class="inline-flex items-center gap-2 bg-orange-50 text-orange-600 px-4 py-2 rounded-full text-sm font-bold mb-6">
+          <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+          Webinaire Exclusif
+        </div>
+        <h1 class="brand-font text-4xl md:text-5xl font-extrabold text-slate-800 leading-tight mb-4">
+          Services Web <span class="text-slate-400 font-light">ou</span> Formation ?
+        </h1>
+        <p class="text-xl text-slate-600 mb-2">
+          Et si vous n'aviez plus à choisir ?
+        </p>
+        <p class="text-slate-500">
+          <strong class="text-orange-500">« Moins d'effort, plus d'impact »</strong> — Découvrez notre vision de l'écosystème digital.
+        </p>
+      </div>
+    </header>
+
+    <!-- Contenu -->
+    <main class="max-w-4xl mx-auto px-6 py-12">
+      <section class="mb-12">
+        <h2 class="brand-font text-2xl font-bold text-slate-800 mb-6 flex items-center">
+          <i class="fa-solid fa-play-circle text-orange-500 mr-3"></i>
+          Déroulé du webinaire
+        </h2>
+        <div class="grid gap-4 md:grid-cols-2">
+          <a href="slide1.html" class="slide-card block bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:border-orange-200">
+            <div class="flex justify-between items-start">
+              <div>
+                <span class="text-xs font-bold text-orange-500 uppercase">Slide 1</span>
+                <h3 class="font-bold text-slate-800 mt-1">Couverture</h3>
+                <p class="text-sm text-slate-500 mt-1">Services Web ou Formation ?</p>
+              </div>
+              <i class="fa-solid fa-chevron-right text-slate-300 slide-arrow transition-transform"></i>
+            </div>
+          </a>
+          <a href="slide2.html" class="slide-card block bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:border-orange-200">
+            <div class="flex justify-between items-start">
+              <div>
+                <span class="text-xs font-bold text-orange-500 uppercase">Slide 2</span>
+                <h3 class="font-bold text-slate-800 mt-1">Introduction</h3>
+                <p class="text-sm text-slate-500 mt-1">Accueil & Mise en contexte</p>
+              </div>
+              <i class="fa-solid fa-chevron-right text-slate-300 slide-arrow transition-transform"></i>
+            </div>
+          </a>
+          <a href="slide3.html" class="slide-card block bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:border-orange-200">
+            <div class="flex justify-between items-start">
+              <div>
+                <span class="text-xs font-bold text-orange-500 uppercase">Slide 3</span>
+                <h3 class="font-bold text-slate-800 mt-1">Le dilemme actuel</h3>
+                <p class="text-sm text-slate-500 mt-1">Pourquoi ce choix pose problème</p>
+              </div>
+              <i class="fa-solid fa-chevron-right text-slate-300 slide-arrow transition-transform"></i>
+            </div>
+          </a>
+          <a href="slide4.html" class="slide-card block bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:border-orange-200">
+            <div class="flex justify-between items-start">
+              <div>
+                <span class="text-xs font-bold text-orange-500 uppercase">Slide 4</span>
+                <h3 class="font-bold text-slate-800 mt-1">Attentes vs Erreurs</h3>
+                <p class="text-sm text-slate-500 mt-1">Ce que veulent vraiment entrepreneurs & étudiants</p>
+              </div>
+              <i class="fa-solid fa-chevron-right text-slate-300 slide-arrow transition-transform"></i>
+            </div>
+          </a>
+          <a href="slide5.html" class="slide-card block bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:border-orange-200">
+            <div class="flex justify-between items-start">
+              <div>
+                <span class="text-xs font-bold text-orange-500 uppercase">Slide 5</span>
+                <h3 class="font-bold text-slate-800 mt-1">La vision Trevixia</h3>
+                <p class="text-sm text-slate-500 mt-1">Notre mantra & méthodologie</p>
+              </div>
+              <i class="fa-solid fa-chevron-right text-slate-300 slide-arrow transition-transform"></i>
+            </div>
+          </a>
+          <a href="slide6.html" class="slide-card block bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:border-orange-200">
+            <div class="flex justify-between items-start">
+              <div>
+                <span class="text-xs font-bold text-orange-500 uppercase">Slide 6</span>
+                <h3 class="font-bold text-slate-800 mt-1">Nos solutions en pratique</h3>
+                <p class="text-sm text-slate-500 mt-1">Services, Formations, Coaching</p>
+              </div>
+              <i class="fa-solid fa-chevron-right text-slate-300 slide-arrow transition-transform"></i>
+            </div>
+          </a>
+          <a href="slide7.html" class="slide-card block bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:border-orange-200">
+            <div class="flex justify-between items-start">
+              <div>
+                <span class="text-xs font-bold text-orange-500 uppercase">Slide 7</span>
+                <h3 class="font-bold text-slate-800 mt-1">Témoignages</h3>
+                <p class="text-sm text-slate-500 mt-1">Retours d'expérience</p>
+              </div>
+              <i class="fa-solid fa-chevron-right text-slate-300 slide-arrow transition-transform"></i>
+            </div>
+          </a>
+          <a href="slide8.html" class="slide-card block bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:border-orange-200">
+            <div class="flex justify-between items-start">
+              <div>
+                <span class="text-xs font-bold text-orange-500 uppercase">Slide 8</span>
+                <h3 class="font-bold text-slate-800 mt-1">Questions & Réponses</h3>
+                <p class="text-sm text-slate-500 mt-1">Session Live</p>
+              </div>
+              <i class="fa-solid fa-chevron-right text-slate-300 slide-arrow transition-transform"></i>
+            </div>
+          </a>
+          <a href="slide9.html" class="slide-card block bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:border-orange-200">
+            <div class="flex justify-between items-start">
+              <div>
+                <span class="text-xs font-bold text-orange-500 uppercase">Slide 9</span>
+                <h3 class="font-bold text-slate-800 mt-1">Conclusion</h3>
+                <p class="text-sm text-slate-500 mt-1">Récapitulatif & Prochaines étapes</p>
+              </div>
+              <i class="fa-solid fa-chevron-right text-slate-300 slide-arrow transition-transform"></i>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- CTA Guide -->
+      <section class="bg-slate-800 rounded-2xl p-8 md:p-12 text-white">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <h2 class="brand-font text-2xl font-bold mb-2">Téléchargez le Guide</h2>
+            <p class="text-slate-300">
+              PDF détaillé des parcours et des tarifs Trevixia.
+            </p>
+          </div>
+          <a
+            href="guide.html"
+            class="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold px-6 py-3 rounded-full transition-colors shrink-0"
+          >
+            <i class="fa-solid fa-file-arrow-down"></i>
+            Voir le Guide
+          </a>
+        </div>
+      </section>
+
+      <footer class="mt-12 py-8 text-center text-slate-500 text-sm">
+        <p>7 Février 2026 • 19h30 (UTC+1)</p>
+        <p class="mt-1">Présenté par Beviryon • Développeur FullStack, Data & IA</p>
+      </footer>
+    </main>
+
+    <script>
+      document.querySelector('.nav-toggle')?.addEventListener('click', function() {
+        document.querySelector('.nav-links').classList.toggle('open');
+      });
+    </script>
+  </body>
+</html>

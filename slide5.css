@@ -1,0 +1,124 @@
+/* Slide 5 - La vision Trevixia */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+.slide-container {
+  width: 1280px;
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #f8fafc;
+  position: relative;
+}
+.brand-font {
+  font-family: "Montserrat", sans-serif;
+}
+.text-brand-blue {
+  color: #1e293b;
+}
+.text-brand-orange {
+  color: #ff7a59;
+}
+.bg-brand-blue {
+  background-color: #1e293b;
+}
+.bg-brand-orange {
+  background-color: #ff7a59;
+}
+.border-brand-orange {
+  border-color: #ff7a59;
+}
+
+/* Ecosystem Specific Styles */
+.process-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.2s;
+  z-index: 10;
+}
+.process-card:hover {
+  transform: translateY(-5px);
+}
+
+.arrow-connector {
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  transform: translateY(-50%);
+  color: #cbd5e1;
+  font-size: 1.5rem;
+  z-index: 1;
+}
+
+.pillar-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.case-card {
+  background-color: #f1f5f9;
+  border-left: 4px solid #ff7a59;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+/* Responsive - Desktop */
+@media (max-width: 1280px) and (min-width: 769px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+  .slide-container {
+    transform: scale(min(100vw / 1280, 100vh / 720));
+    transform-origin: top center;
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+  .slide-container {
+    width: 100% !important;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto !important;
+    min-height: 100vh;
+    transform: none !important;
+    overflow-y: auto;
+  }
+  .slide-container > div:first-child[class*="px-12"] {
+    padding: 1rem !important;
+  }
+  .slide-container > div:first-child h1 {
+    font-size: 1.25rem !important;
+  }
+  .slide-container > div:nth-child(2) {
+    padding: 1rem !important;
+    overflow-y: auto !important;
+  }
+  .slide-container .flex.justify-between.items-stretch {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+  .slide-container .process-card.w-1\/3 {
+    width: 100% !important;
+  }
+  .slide-container .grid.grid-cols-3 {
+    grid-template-columns: 1fr !important;
+  }
+  .slide-container .text-4xl {
+    font-size: 1.5rem !important;
+  }
+}

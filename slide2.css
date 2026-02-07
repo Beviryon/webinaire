@@ -1,0 +1,124 @@
+/* Slide 2 - Introduction & Agenda */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+.slide-container {
+  width: 1280px;
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #f8fafc;
+  position: relative;
+}
+.brand-font {
+  font-family: "Montserrat", sans-serif;
+}
+.text-brand-blue {
+  color: #1e293b;
+}
+.text-brand-orange {
+  color: #ff7a59;
+}
+.bg-brand-blue {
+  background-color: #1e293b;
+}
+.bg-brand-orange {
+  background-color: #ff7a59;
+}
+.bg-brand-light {
+  background-color: #f1f5f9;
+}
+
+/* Timeline styles */
+.agenda-item {
+  position: relative;
+  padding-left: 2.5rem;
+  margin-bottom: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.timeline-line {
+  position: absolute;
+  left: 22px;
+  top: 35px;
+  bottom: -20px;
+  width: 2px;
+  background-color: #e2e8f0;
+  z-index: 0;
+}
+.agenda-item:last-child .timeline-line {
+  display: none;
+}
+
+.agenda-number {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #ff7a59;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+  position: absolute;
+  left: 8px;
+  top: 2px;
+  z-index: 10;
+  box-shadow: 0 0 0 4px #ffffff;
+}
+
+.card-shadow {
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Responsive - Desktop */
+@media (max-width: 1280px) and (min-width: 769px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+  .slide-container {
+    transform: scale(min(100vw / 1280, 100vh / 720));
+    transform-origin: top center;
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+  .slide-container {
+    width: 100% !important;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto !important;
+    min-height: 100vh;
+    transform: none !important;
+    overflow-y: auto;
+  }
+  .slide-container > div:first-child[class*="px-12"] {
+    padding: 1rem !important;
+  }
+  .slide-container > div:first-child h1 {
+    font-size: 1.25rem !important;
+  }
+  .slide-container > div:nth-child(2) {
+    flex-direction: column !important;
+    padding: 1rem !important;
+    overflow-y: auto !important;
+  }
+  .slide-container .w-7\/12 {
+    width: 100% !important;
+  }
+  .slide-container .w-5\/12 {
+    width: 100% !important;
+  }
+}
