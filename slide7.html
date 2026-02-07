@@ -23,18 +23,10 @@
     <nav class="nav-wrapper">
       <div class="nav-container">
         <a href="index.html" class="nav-brand"><i class="fa-solid fa-layer-group"></i><span>TREVIXIA</span></a>
-        <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+        <button type="button" class="nav-toggle" onclick="var l=document.querySelector('.nav-wrapper .nav-links');if(l)l.classList.toggle('open')" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
         <div class="nav-links">
           <a href="index.html">Accueil</a>
-          <a href="slide1.html">1</a>
-          <a href="slide2.html">2</a>
-          <a href="slide3.html">3</a>
-          <a href="slide4.html">4</a>
-          <a href="slide5.html">5</a>
-          <a href="slide6.html">6</a>
-          <a href="slide7.html" class="active">7</a>
-          <a href="slide8.html">8</a>
-          <a href="slide9.html">9</a>
+          <a href="slides.html" class="active"><i class="fa-solid fa-presentation-screen mr-1"></i> Présentation</a>
           <a href="guide.html" class="nav-guide"><i class="fa-solid fa-file-pdf mr-1"></i> Le Guide</a>
         </div>
       </div>
@@ -251,5 +243,6 @@
         <!-- Progress bar ~5/7th -->
       </div>
     </div>
+    <script src="slide-nav.js"></script>
   </body>
 </html>

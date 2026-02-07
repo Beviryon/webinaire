@@ -133,7 +133,7 @@ section ul {
   margin-top: 1.5rem;
 }
 .stat-card {
-  background: white;
+  background: #ffffff;
   padding: 1rem;
   border-radius: 0.5rem;
   border: 1px solid #e2e8f0;
@@ -152,7 +152,7 @@ section ul {
 
 /* Cards */
 .pillar-card {
-  background: white;
+  background: #ffffff;
   border-radius: 0.75rem;
   padding: 1.25rem;
   margin-bottom: 1rem;
@@ -190,7 +190,7 @@ section ul {
   min-width: 400px;
   border-collapse: collapse;
   font-size: 0.9rem;
-  background: white;
+  background: #ffffff;
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
@@ -222,7 +222,7 @@ section ul {
   margin-top: 1rem;
 }
 .profile-card {
-  background: white;
+  background: #ffffff;
   padding: 1rem;
   border-radius: 0.5rem;
   border: 1px solid #e2e8f0;
@@ -280,12 +280,30 @@ section ul {
   margin-top: 0.5rem;
 }
 
-/* Print Styles */
+/* Footer */
+.page-footer {
+  margin-top: 2rem;
+  background: #f8fafc;
+  color: var(--gray-500);
+  border-top: 1px solid #e2e8f0;
+}
+.page-footer .footer-inner {
+  padding: 1.5rem 2rem;
+}
+.page-footer a {
+  color: var(--brand-orange);
+}
+.page-footer a:hover {
+  text-decoration: underline;
+}
+
 @media print {
   body {
-    background: white;
+    background: #fff !important;
+    color: #1e293b;
   }
-  .download-pdf-btn {
+  .download-pdf-btn,
+  .page-footer {
     display: none !important;
   }
   .container {

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Présentation Webinaire Trevixia - Services Web ou Formation ?</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="nav.css" rel="stylesheet" />
+    <link href="slides.css" rel="stylesheet" />
+    <link href="slide1.css" rel="stylesheet" />
+    <link href="slide2.css" rel="stylesheet" />
+    <link href="slide3.css" rel="stylesheet" />
+    <link href="slide4.css" rel="stylesheet" />
+    <link href="slide5.css" rel="stylesheet" />
+    <link href="slide6.css" rel="stylesheet" />
+    <link href="slide7.css" rel="stylesheet" />
+    <link href="slide8.css" rel="stylesheet" />
+    <link href="slide9.css" rel="stylesheet" />
+  </head>
+  <body class="has-nav">
+    <nav class="nav-wrapper">
+      <div class="nav-container">
+        <a href="index.html" class="nav-brand"><i class="fa-solid fa-layer-group"></i><span>TREVIXIA</span></a>
+        <button type="button" class="nav-toggle" onclick="var l=document.querySelector('.nav-wrapper .nav-links');if(l)l.classList.toggle('open')" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+        <div class="nav-links">
+          <a href="index.html">Accueil</a>
+          <a href="slides.html" class="active"><i class="fa-solid fa-presentation-screen mr-1"></i> Présentation</a>
+          <a href="guide.html" class="nav-guide"><i class="fa-solid fa-file-pdf mr-1"></i> Le Guide</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="presentation-layout">
+      <!-- Navbar latérale -->
+      <aside class="presentation-sidebar" id="sidebar">
+        <h3>Navigation</h3>
+        <nav class="presentation-sidebar-nav">
+          <a href="#section-1" class="sidebar-link active" data-section="1"><span class="num">1</span> Couverture</a>
+          <a href="#section-2" class="sidebar-link" data-section="2"><span class="num">2</span> Introduction</a>
+          <a href="#section-3" class="sidebar-link" data-section="3"><span class="num">3</span> Le dilemme</a>
+          <a href="#section-4" class="sidebar-link" data-section="4"><span class="num">4</span> Attentes vs Erreurs</a>
+          <a href="#section-5" class="sidebar-link" data-section="5"><span class="num">5</span> Vision Trevixia</a>
+          <a href="#section-6" class="sidebar-link" data-section="6"><span class="num">6</span> Solutions en pratique</a>
+          <a href="#section-7" class="sidebar-link" data-section="7"><span class="num">7</span> Témoignages</a>
+          <a href="#section-8" class="sidebar-link" data-section="8"><span class="num">8</span> Questions & Réponses</a>
+          <a href="#section-9" class="sidebar-link" data-section="9"><span class="num">9</span> Conclusion</a>
+        </nav>
+      </aside>
+
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Ouvrir le menu"><i class="fa-solid fa-bars"></i></button>
+
+      <!-- Contenu principal - toutes les sections empilées -->
+      <main class="presentation-content">
+        <section id="section-1" class="presentation-section cover-section" data-section="1">
+          <div class="slide-container cover-container">
+            <div class="circle-decor" style="width: 400px; height: 400px; top: -100px; left: -100px"></div>
+            <div class="circle-decor" style="width: 200px; height: 200px; bottom: 50px; left: 40%; background-color: rgba(30, 41, 59, 0.03);"></div>
+            <div class="flex-1 flex flex-col justify-center cover-content">
+              <div class="cover-logo">
+                <div class="w-10 h-10 bg-brand-blue rounded flex items-center justify-center text-white text-xl"><i class="fa-solid fa-layer-group"></i></div>
+                <span class="brand-font font-bold text-2xl text-brand-blue tracking-tight">TREVIXIA</span>
+              </div>
+              <div class="cover-body">
+                <div class="inline-flex items-center space-x-2 bg-blue-50 px-4 py-2 rounded-full mb-5 border border-blue-100">
+                  <span class="w-2 h-2 rounded-full bg-brand-orange animate-pulse"></span>
+                  <p class="text-brand-blue font-bold text-sm uppercase tracking-wider m-0">Webinaire Exclusif</p>
+                </div>
+                <h1 class="cover-title">Services Web <span class="font-light text-gray-400">ou</span> Formation ?</h1>
+                <p class="cover-subtitle">Et si vous n'aviez plus à choisir ?</p>
+                <div class="accent-bar"></div>
+                <div class="flex items-start space-x-4 mb-6">
+                  <div class="bg-orange-50 p-3 rounded-lg shrink-0"><i class="fa-solid fa-bolt text-brand-orange text-2xl"></i></div>
+                  <div>
+                    <p class="brand-font text-lg font-bold text-brand-blue m-0">Moins d'effort, plus d'impact</p>
+                    <p class="text-gray-500 text-sm mt-1 m-0">Découvrez notre vision de l'écosystème digital.</p>
+                  </div>
+                </div>
+                <div class="flex flex-wrap items-center gap-6 pt-6 border-t border-gray-100">
+                  <div class="flex items-center space-x-3 text-gray-700"><i class="fa-regular fa-calendar text-brand-orange text-lg"></i><span class="font-semibold">7 Février 2026</span></div>
+                  <div class="flex items-center space-x-3 text-gray-700"><i class="fa-regular fa-clock text-brand-orange text-lg"></i><span class="font-semibold">19h30 (UTC+1)</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-image-container bg-brand-blue cover-image">
+              <img alt="Team collaborating" class="hero-image" src="https://page.gensparksite.com/slides_images/ad0180775f645fbf80d6ec3afb832395.webp" />
+              <div class="cover-speaker">
+                <div class="bg-white p-5 rounded-lg shadow-lg border-l-4 border-orange-500">
+                  <p class="text-xs text-gray-500 font-bold uppercase tracking-wide mb-1 m-0">Présenté par</p>
+                  <p class="brand-font font-bold text-brand-blue text-lg m-0">Beviryon</p>
+                  <p class="text-sm text-gray-600 mt-0.5 m-0">Développeur FullStack, Data & IA</p>
+                </div>
+              </div>
+              <div class="absolute top-4 right-4 opacity-30">
+                <svg fill="none" height="80" viewBox="0 0 100 100" width="80"><circle cx="50" cy="50" r="48" stroke="white" stroke-width="2"></circle><circle cx="50" cy="50" r="30" stroke="white" stroke-width="2"></circle></svg>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="section-2" class="presentation-section" data-section="2"></section>
+        <section id="section-3" class="presentation-section" data-section="3"></section>
+        <section id="section-4" class="presentation-section" data-section="4"></section>
+        <section id="section-5" class="presentation-section" data-section="5"></section>
+        <section id="section-6" class="presentation-section" data-section="6"></section>
+        <section id="section-7" class="presentation-section" data-section="7"></section>
+        <section id="section-8" class="presentation-section" data-section="8"></section>
+        <section id="section-9" class="presentation-section" data-section="9"></section>
+      </main>
+      <footer class="presentation-contact-footer">
+        <div class="flex items-center space-x-8">
+          <a href="https://trevixia-web.netlify.app/" target="_blank" rel="noopener" class="flex items-center text-white hover:text-orange-300 transition-colors">
+            <i class="fa-solid fa-globe text-brand-orange mr-2"></i>
+            <span class="text-sm font-semibold">https://trevixia-web.netlify.app/</span>
+          </a>
+          <a href="mailto:trevixiacontact@gmail.com" class="flex items-center text-white hover:text-orange-300 transition-colors">
+            <i class="fa-solid fa-envelope text-brand-orange mr-2"></i>
+            <span class="text-sm font-semibold">trevixiacontact@gmail.com</span>
+          </a>
+        </div>
+        <div class="flex items-center">
+          <span class="text-sm mr-4 text-gray-400">Suivez-nous :</span>
+          <a class="social-icon text-white" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a class="social-icon text-white" href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a class="social-icon text-white" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      (function() {
+        function extractSlideContainer(html) {
+          var start = html.indexOf('<div class="slide-container">');
+          if (start === -1) return null;
+          var innerStart = html.indexOf('>', start) + 1;
+          var depth = 1, pos = innerStart;
+          while (depth > 0) {
+            var nextOpen = html.indexOf('<div', pos);
+            var nextClose = html.indexOf('</div>', pos);
+            if (nextClose === -1) return null;
+            if (nextOpen !== -1 && nextOpen < nextClose) {
+              depth++;
+              pos = html.indexOf('>', nextOpen) + 1;
+            } else {
+              depth--;
+              if (depth === 0) return html.substring(innerStart, nextClose);
+              pos = nextClose + 6;
+            }
+          }
+          return null;
+        }
+        var slides = ['slide2','slide3','slide4','slide5','slide6','slide7','slide8','slide9'];
+        slides.forEach(function(name, i) {
+          var idx = i + 2;
+          fetch(name + '.html').then(function(r){ return r.text(); }).then(function(html) {
+            var content = extractSlideContainer(html);
+            if (content) {
+              var section = document.getElementById('section-' + idx);
+              if (section) {
+                var div = document.createElement('div');
+                div.className = 'slide-container';
+                div.innerHTML = content;
+                section.appendChild(div);
+              }
+            }
+          }).catch(function(){});
+        });
+      })();
+    </script>
+    <script src="slides-presentation.js"></script>
+  </body>
+</html>
